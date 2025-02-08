@@ -1,0 +1,42 @@
+/* animations.css */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes bounce {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(10px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Fade-in animation for Subject Cards */
+.subject-card {
+  animation: fadeIn 0.8s ease-out;
+}
+
+/* Bounce animation for header */
+.header h1 {
+  animation: bounce 1s ease infinite;
+}
+
+/* Slide-up animation for topics */
+.topics-list {
+  animation: slideUp 1s ease-out;
+}
+
+.lesson-card input[type="checkbox"]:checked {
+  background-color: #4caf50;
+  animation: bounce 0.5s ease-out;
+}
